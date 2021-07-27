@@ -16,10 +16,14 @@ public class QuoteController {
     @Value("${myquote}")
     private String myQuote;
 
+    @Value("${securequote}")
+    private String secureQuote;
+
     @GetMapping(value = "/quotes", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<String> quotes() {
         var myQuoteList = quoteConfigs.getQuotes();
         myQuoteList.add(myQuote);
+        myQuoteList.add(secureQuote);
         return myQuoteList;
     }
 }
