@@ -1,4 +1,4 @@
-package ca.evanepio.boot.quotes.Quoter;
+package ca.evanepio.boot.quotes;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

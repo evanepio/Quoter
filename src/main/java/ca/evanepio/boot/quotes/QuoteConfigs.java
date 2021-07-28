@@ -1,4 +1,4 @@
-package ca.evanepio.boot.quotes.Quoter;
+package ca.evanepio.boot.quotes;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
